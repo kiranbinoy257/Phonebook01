@@ -1,0 +1,83 @@
+.main{
+    width:100vw;
+    height: 100vh;
+    /* background-color: rgb(23, 136, 102); */
+    background: rgb(40, 40, 207);
+     background: linear-gradient(270deg, rgb(28, 37, 39)0%,  rgb(36, 67, 73) 100%);
+    position: relative;
+}
+
+.outer{
+    height: 550px;
+    width: 350px;
+    background-color: azure;
+    position:absolute;
+    top: 5%;
+    left: 35%;
+    border-radius: 10pt;
+}
+p{
+    font-size: 150%;
+    font-weight: 500;
+    position: absolute;
+    left: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+/* #Search{
+    height: 40px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    border-radius: 10pt;
+    position: absolute;
+    top: 5%;
+    left: 6%;
+    text-align: center;
+} */
+#contacts{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    color: rgb(6, 6, 7);
+    margin: 5%;
+    margin-top: 20px;
+    font-size: larger;
+
+}
+.sub{
+    height: 400px;
+    width: 320px;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left:5%;
+    font-size:150%;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-y: scroll;
+    
+}
+.add{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: rgb(165, 11, 11);
+    margin-top: 480px;
+    margin-left: 80%;
+ 
+     font-size: 220%;
+    color: black;
+    /* font-weight: 500; */
+    position: sticky;
+    border: 1px solid rgb(49, 39, 104);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+h4{
+    margin-bottom: 20px;
+    
+}
