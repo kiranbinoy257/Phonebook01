@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-
-
 import './phonebook.css'
 import axios from 'axios';
 
@@ -44,7 +42,7 @@ const handleChange=(e)=>{setName(e.target.value)}
                    </form>
                    <div className="sub">
                    <ul>
-          {data.map((dt)=>(<ul key={dt._id}>{dt.name}</ul>))}
+          {data.map((dt,index)=>(<ul key={index}>{dt.name}</ul>))}
         </ul>
 
                    </div>

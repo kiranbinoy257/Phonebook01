@@ -3,14 +3,14 @@
     height: 100vh;
     /* background-color: rgb(23, 136, 102); */
     background: rgb(40, 40, 207);
-     background: linear-gradient(270deg, rgb(41, 40, 48)0%,    rgb(57, 56, 94)100%);
+     background: linear-gradient(270deg, rgb(126, 61, 61)0%,   rgb(126, 61, 61)100%);
     position: relative;
 }
 
 .outer{
     height: 550px;
     width: 350px;
-    background-color: rgb(2, 143, 119);
+    background-color: rgb(50, 182, 182);
     position:absolute;
     top: 5%;
     left: 35%;
@@ -20,8 +20,7 @@ p{
     font-size: 150%;
     font-weight: 500;
     position: absolute;
-    left: 25%;
-    top: 5%;
+    left: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -60,84 +59,6 @@ p{
     
     
 }
-#p2{
-    position: absolute;
-    top: 0%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p3{
-    position: absolute;
-    font-size: 120%;
-    left: 8%;
-    top: 0%;
-}
-#p4{
-    position: absolute;
-    top: 8%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p5{
-    position: absolute;
-    font-size: 120%;
-    left: 20%;
-    top: 8%;
-}
-#p6{
-    position: absolute;
-    top: 17%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p7{
-    position: absolute;
-    font-size: 120%;
-    left: 10%;
-    top: 17%;
-}
-#P8{
-    position: absolute;
-    top: 25%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p9{
-    position: absolute;
-    font-size: 120%;
-    left: 10%;
-    top: 25%;
-}
-#p10{
-    position: absolute;
-    top: 33%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p11{
-    position: absolute;
-    font-size: 120%;
-    left: 13%;
-    top: 33%;
-}
-#p12{
-    position: absolute;
-    top: 42%;
-    font-size: 120%;
-    left: 0%;
-
-}
-#p13{
-    position: absolute;
-    font-size: 120%;
-    left: 41%;
-    top: 42%;
-}
 .add{
     height: 50px;
     width: 50px;
@@ -169,19 +90,4 @@ h4{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 2px black solid;
-}
-#edit{
-    position: absolute;
-    top: 80%;
-    left: 45%;
-    border-radius: 10pt;
-    background-color: rgb(61, 95, 7);
-}
-
-#delete{
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    border-radius: 10pt;
-    background-color: rgb(61, 95, 7);
 }

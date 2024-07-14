@@ -1,33 +1,13 @@
 import { useEffect, useState } from 'react'
-
-
-import './details.css'
+import './Details.css'
 import axios from 'axios';
 
 function Details() {
- const [name,setName]=useState("");
+ 
  const [data,setData]=useState([]);
  const [count,setCount]=useState(0)
-const handleChange=(e)=>{setName(e.target.value)}
-  const addTask=async()=>{ 
-    // const res=await fetch("http://127.0.0.1:3000/api/add",
-    //   {
-    //     headers:{"Content-Type":"application/json"},
-    //     method:"post",
-    //     body:JSON.stringify({name:name})
-    //   }
-    // )
-    const res=await axios.post("http://localhost:3000/api/add",{ headers:{"Content-Type":"application/json"},name:name});
-    console.log(res);
-    if(res.status==201){
-      alert(res.data.msg);
-      setName("")
-      setCount(count+1)
-    }
-  }
 
   const getData=async()=>{
-    // get todo
     const res=await axios.get("http://localhost:3000/api/get");
     setData([...res.data])
   }
@@ -39,12 +19,24 @@ const handleChange=(e)=>{setName(e.target.value)}
     <>
       <div className="main">
                 <div className="outer">
-                  <p> Add Contact</p>
+                  <p id='p1'>Contact Details</p>
+                  
+                  
                    <div className="sub">
-                   {/* <ul>
-          {data.map((dt)=>(<ul key={dt._id}>{dt.name}</ul>))}
-        </ul> */}
+                   <ul>
+                    <p id='p2'>Name     :</p>          <p id='p3'>{data.map((dt,index)=>(<ul key={index}>{dt.name}</ul>))} </p>
+                   <p id='p4'>Last Name :</p> <p id='p5'>{data.map((dt,index)=>(<ul key={index}>{dt.Lname}</ul>))}</p>
+                   <p id='p6'>Email :</p> <p id='p7'>{data.map((dt,index)=>(<ul key={index}>{dt.email}</ul>))}</p>        
+                   <p id='P8'>DOB:</p> <p id='p9'>{data.map((dt,index)=>(<ul key={index}>{dt.DOB}</ul>))}</p>
+                   <p id='p10'>Number:</p> <p id='p11'>{data.map((dt,index)=>(<ul key={index}>{dt.number}</ul>))}</p>
+                   <p id='p12'>Alternativenumber:</p><p id='p13'> {data.map((dt,index)=>(<ul key={index}>{dt.Alternativenumber}</ul>))}</p>
 
+                 </ul>
+
+        
+
+                   <button id='edit'>Edit</button>
+                   <button id='delete'>Delete</button>
                    </div>
                    
                 </div>
