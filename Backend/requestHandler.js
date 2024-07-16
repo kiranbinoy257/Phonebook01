@@ -2,9 +2,9 @@ import phonebookSchema from "./models/Phonebook.model.js"
 export async function adddata(req,res){
     try{
         console.log(req.body);
-        const {name,Lname,email,DOB,number,Alternativenumber}=req.body;
+        const {...contact}=req.body;
         await phonebookSchema
-        .create({name,Lname,email,DOB,number,Alternativenumber})
+        .create({...contact})
             .then(()=>{
                 res.status(201).send({msg:"sucessfully created"})
             })
@@ -17,6 +17,7 @@ export async function adddata(req,res){
 }
 export async function getdata(req,res){
     try{
+       
         const data=await phonebookSchema.find();
         res.status(200).send(data)
         console.log(data);
@@ -42,7 +43,7 @@ export async function updatedata(req,res){
     try{
         const {id}=req.params;
         console.log(id);
-        await phonebookSchema.deleteOne({_id:id});
+        await phonebookSchema.deleteOne({contact_id});
         res.status(200).send({msg:"sucessfully deleted"})
     }catch (error){
         console.error(error);

@@ -1,12 +1,12 @@
 import mongoose, {Mongoose,model}from "mongoose";
 const phonebookSchema=new mongoose.Schema
 ({
-    name:{type:String},
-    Lname:{type:String},
+    fname:{type:String},
+    lname:{type:String},
     email:{type:String,Number},
-    DOB:{type:String},
+    dob:{type:String},
     number:{type:Number},
-    Alternativenumber:{type:Number}
+    altnumber:{type:Number}
 
 })
 export default mongoose.model.phonebook || mongoose.model('phonebook',phonebookSchema)
